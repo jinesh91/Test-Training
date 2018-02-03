@@ -38,7 +38,7 @@ public class ActionBarMenuActivity extends Activity {
 	  case R.id.menu_launch:
 		Intent i = new Intent(this, SimpleBundleDemoActivity.class);
 		startActivity(i);
-		break;
+		break
 	  default:
 		break;
 	  }
