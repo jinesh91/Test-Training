@@ -1,19 +1,26 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'rspl'
+            keyPassword 'rspl123#'
+            storeFile file('C:/Users/jinesh.chhichhiya/Desktop/tranning.jks')
+            storePassword 'rspl123#'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion '25.0.2'
-
     defaultConfig {
         applicationId "codepath.apps.demointroandroid"
         minSdkVersion 9
         targetSdkVersion 25
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.config
         }
     }
 }
