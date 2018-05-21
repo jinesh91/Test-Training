@@ -34,7 +34,7 @@ public class BasicImageDownloadActivity extends Activity {
 		} catch (MalformedURLException e1) {
 			url = null;
 		}
-		
+		kfjkd
 	    URLConnection conn;
 	    InputStream in;
 	    Bitmap bitmap;
